@@ -1,0 +1,9 @@
+[versions]
+com-fasterxml-jackson-core-jackson-databind = "2.19.2"
+org-projectlombok-lombok = "1.18.38"
+io-projectreactor-reactor-core = "3.4.40"
+
+[libraries]
+com-fasterxml-jackson-core-jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "com-fasterxml-jackson-core-jackson-databind" }
+org-projectlombok-lombok = { module = "org.projectlombok:lombok", version.ref = "org-projectlombok-lombok" }
+io-projectreactor-reactor-core = { module = "io.projectreactor:reactor-core", version.ref = "io-projectreactor-reactor-core" }
