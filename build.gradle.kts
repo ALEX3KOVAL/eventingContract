@@ -13,6 +13,10 @@ java {
     }
 }
 
+repositories {
+    mavenCentral()
+}
+
 tasks.getByName<Jar>("jar") {
     enabled = true
 }
