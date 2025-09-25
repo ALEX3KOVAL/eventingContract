@@ -1,5 +1,5 @@
 plugins {
-    id("java")
+    id("java-library")
     id("maven-publish")
 }
 
@@ -11,6 +11,10 @@ java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
     }
+}
+
+tasks.getByName<Jar>("jar") {
+    enabled = true
 }
 
 dependencies {
@@ -29,7 +33,19 @@ publishing {
 
             groupId = "com.github.ALEX3KOVAL"
             artifactId = "eventingContract"
-            version = "v1.10.0"
+            version = "v1.11.0"
+        }
+    }
+
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/ALEX3KOVAL/eventingContract")
+
+            credentials {
+                username = System.getenv("GITHUB_USERNAME")
+                password = System.getenv("GITHUB_TOKEN")
+            }
         }
     }
 }
