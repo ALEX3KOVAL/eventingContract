@@ -1,4 +1,4 @@
-package ru.alex3koval.eventingContract;
+package com.github.ALEX3KOVAL.eventingContract;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -1,4 +1,4 @@
-package ru.alex3koval.eventingContract;
+package com.github.ALEX3KOVAL.eventingContract;
 
 import reactor.core.publisher.Mono;
 

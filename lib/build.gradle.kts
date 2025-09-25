@@ -3,6 +3,9 @@ plugins {
     id("maven-publish")
 }
 
+version = "1.1.0"
+group = "com.github.ALEX3KOVAL"
+
 repositories {
     mavenCentral()
 }
@@ -11,7 +14,7 @@ java {
     withSourcesJar()
 }
 
-publishing {
+/*publishing {
     publications {
         create<MavenPublication>("mavenJava") {
             from(components["java"])
@@ -27,7 +30,7 @@ publishing {
             }
         }
     }
-}
+}*/
 
 dependencies {
     implementation(libs.com.fasterxml.jackson.core.jackson.databind)
