@@ -29,7 +29,7 @@ publishing {
 
             groupId = "com.github.ALEX3KOVAL"
             artifactId = "eventingContract"
-            version = "1.9.0"
+            version = "v1.10.0"
         }
     }
 }
