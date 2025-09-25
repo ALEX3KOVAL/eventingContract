@@ -3,7 +3,7 @@ plugins {
     id("maven-publish")
 }
 
-version = "1.3.0"
+version = "1.4.0"
 group = "com.github.ALEX3KOVAL"
 
 repositories {
@@ -31,7 +31,6 @@ dependencies {
     implementation(libs.io.projectreactor.reactor.core)
 }
 
-// Apply a specific Java toolchain to ease working on different environments.
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
