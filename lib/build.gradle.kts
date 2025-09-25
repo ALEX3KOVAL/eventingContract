@@ -14,23 +14,13 @@ java {
     withSourcesJar()
 }
 
-/*publishing {
+publishing {
     publications {
         create<MavenPublication>("mavenJava") {
             from(components["java"])
         }
     }
-    repositories {
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/ALEX3KOVAL/eventingContract")
-            credentials {
-                username = System.getenv("GITHUB_ACTOR")
-                password = System.getenv("GITHUB_TOKEN")
-            }
-        }
-    }
-}*/
+}
 
 dependencies {
     implementation(libs.com.fasterxml.jackson.core.jackson.databind)
