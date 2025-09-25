@@ -26,6 +26,10 @@ publishing {
     publications {
         create<MavenPublication>("maven") {
             from(components["java"])
+
+            groupId = "com.github.ALEX3KOVAL"
+            artifactId = "eventingContract"
+            version = "1.9.0"
         }
     }
 }
