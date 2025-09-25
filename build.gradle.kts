@@ -19,10 +19,6 @@ dependencies {
     implementation(libs.io.projectreactor.reactor.core)
 }
 
-repositories {
-    mavenCentral()
-}
-
 publishing {
     publications {
         create<MavenPublication>("maven") {

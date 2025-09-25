@@ -1,6 +1,0 @@
-jdk:
-  - openjdk17
-build:
-  - cd lib && ../gradlew build
-install:
-  - cd lib && ../gradlew publishToMavenLocal
