@@ -3,10 +3,3 @@ plugins {
 }
 
 rootProject.name = "eventingContract"
-
-dependencyResolutionManagement {
-    repositories {
-        mavenCentral()
-        maven { url = uri("https://jitpack.io") }
-    }
-}
