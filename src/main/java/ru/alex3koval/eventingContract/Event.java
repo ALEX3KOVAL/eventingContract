@@ -6,29 +6,19 @@ import lombok.Getter;
 import java.time.LocalDateTime;
 
 @Getter
-public class Event<T> {
+public class Event {
     private final String name;
-    private final T payload;
+    private final String json;
     private final EventStatus status;
     private final LocalDateTime createdAt;
 
     public Event(
-        T payload,
-        EventStatus status
-    ) {
-        this.name = payload.getClass().getCanonicalName();
-        this.payload = payload;
-        this.status = status;
-        this.createdAt = LocalDateTime.now();
-    }
-
-    public Event(
         String name,
-        T payload,
+        String json,
         EventStatus status
     ) {
         this.name = name;
-        this.payload = payload;
+        this.json = json;
         this.status = status;
         this.createdAt = LocalDateTime.now();
     }
@@ -36,9 +26,9 @@ public class Event<T> {
     @Override
     public String toString() {
         return String.format(
-            "name = %s, payload = %s, status = %s, createdAt = %s",
+            "name = %s, json = %s, status = %s, createdAt = %s",
             name,
-            payload,
+            json,
             status,
             createdAt
         );
