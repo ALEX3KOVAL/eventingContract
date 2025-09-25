@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "ru.alex3koval"
-version = "1.13.0"
+version = "1.13.1"
 
 java {
     withSourcesJar()
@@ -37,7 +37,7 @@ publishing {
 
             groupId = "ru.alex3koval"
             artifactId = "eventingContract"
-            version = "1.13.0"
+            version = "1.13.1"
         }
     }
 
@@ -48,7 +48,7 @@ publishing {
 
             credentials {
                 username = "ALEX3KOVAL"
-                password = "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"
+                password = System.getenv("GITHUB_TOKEN")
             }
         }
     }
