@@ -1,9 +1,8 @@
 plugins {
     id("java-library")
-    id("maven-publish")
 }
 
-version = "1.4.0"
+version = "1.5.0"
 group = "com.github.ALEX3KOVAL"
 
 repositories {
@@ -12,14 +11,6 @@ repositories {
 
 java {
     withSourcesJar()
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("mavenJava") {
-            from(components["java"])
-        }
-    }
 }
 
 dependencies {
