@@ -4,5 +4,5 @@ import reactor.core.publisher.Mono;
 
 @FunctionalInterface
 public interface ReactiveEventPusher<T> extends BaseEventPusher {
-    Mono<T> push(String topic, Event event);
+    <R> Mono<T> push(String topic, Event event, Class<R> payloadClazz);
 }
