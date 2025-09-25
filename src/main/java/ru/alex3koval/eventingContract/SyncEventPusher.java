@@ -1,4 +1,7 @@
-package com.github.ALEX3KOVAL.eventingContract;
+package ru.alex3koval.eventingContract;
+
+import ru.alex3koval.eventingContract.BaseEventPusher;
+import ru.alex3koval.eventingContract.Event;
 
 @FunctionalInterface
 public interface SyncEventPusher extends BaseEventPusher {

@@ -1,5 +1,6 @@
-package com.github.ALEX3KOVAL.eventingContract;
+package ru.alex3koval.eventingContract;
 
+import ru.alex3koval.eventingContract.Event;
 import reactor.core.publisher.Mono;
 
 @FunctionalInterface

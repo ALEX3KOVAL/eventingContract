@@ -1,7 +1,7 @@
-package com.github.ALEX3KOVAL.eventingContract;
+package ru.alex3koval.eventingContract;
 
+import ru.alex3koval.eventingContract.vo.EventStatus;
 import lombok.Getter;
-import com.github.ALEX3KOVAL.eventingContract.vo.EventStatus;
 
 import java.time.LocalDateTime;
 

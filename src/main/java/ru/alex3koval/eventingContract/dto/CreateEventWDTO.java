@@ -1,6 +1,6 @@
-package com.github.ALEX3KOVAL.eventingContract.dto;
+package ru.alex3koval.eventingContract.dto;
 
-import com.github.ALEX3KOVAL.eventingContract.vo.EventStatus;
+import ru.alex3koval.eventingContract.vo.EventStatus;
 
 import java.time.LocalDateTime;
 

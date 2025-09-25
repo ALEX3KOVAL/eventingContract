@@ -1,4 +1,4 @@
-package com.github.ALEX3KOVAL.eventingContract.vo;
+package ru.alex3koval.eventingContract.vo;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

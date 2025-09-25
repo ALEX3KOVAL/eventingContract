@@ -3,27 +3,30 @@ plugins {
     id("maven-publish")
 }
 
-allprojects {
-    group = "com.github.ALEX3KOVAL"
-    version = "1.5.0"
+group = "ru.alex3koval.eventingContract"
+version = "1.6.0"
+
+java {
+    withSourcesJar()
 }
 
-subprojects {
-    apply(plugin = "java")
+dependencies {
+    implementation(libs.com.fasterxml.jackson.core.jackson.databind)
 
-    repositories {
-        mavenCentral()
-    }
+    compileOnly(libs.org.projectlombok.lombok)
+    annotationProcessor(libs.org.projectlombok.lombok)
+
+    implementation(libs.io.projectreactor.reactor.core)
 }
 
-project(":lib") {
-    apply(plugin = "maven-publish")
+repositories {
+    mavenCentral()
+}
 
-    publishing {
-        publications {
-            create<MavenPublication>("mavenJava") {
-                from(components["java"])
-            }
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            from(components["java"])
         }
     }
 }
