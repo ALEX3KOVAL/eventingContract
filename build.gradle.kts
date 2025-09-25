@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "ru.alex3koval"
-version = "1.13.1"
+version = "1.13.0"
 
 java {
     withSourcesJar()
@@ -37,7 +37,7 @@ publishing {
 
             groupId = "ru.alex3koval"
             artifactId = "eventingContract"
-            version = "1.13.1"
+            version = "1.13.0"
         }
     }
 
