@@ -3,7 +3,7 @@ plugins {
     id("maven-publish")
 }
 
-group = "ru.alex3koval"
+group = "ALEX3KOVAL"
 version = "1.13.1"
 
 java {
@@ -35,7 +35,7 @@ publishing {
         create<MavenPublication>("maven") {
             from(components["java"])
 
-            groupId = "ru.alex3koval"
+            groupId = "ALEX3KOVAL"
             artifactId = "eventingContract"
             version = "1.13.1"
         }
