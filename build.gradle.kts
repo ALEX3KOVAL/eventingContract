@@ -3,8 +3,8 @@ plugins {
     id("maven-publish")
 }
 
-group = "ru.alex3koval.eventingContract"
-version = "1.13.0"
+group = "ru.alex3koval"
+version = "1.13.1"
 
 java {
     withSourcesJar()
@@ -35,9 +35,9 @@ publishing {
         create<MavenPublication>("maven") {
             from(components["java"])
 
-            groupId = "com.github.ALEX3KOVAL"
+            groupId = "ru.alex3koval"
             artifactId = "eventingContract"
-            version = "1.13.0"
+            version = "1.13.1"
         }
     }
 
@@ -47,8 +47,8 @@ publishing {
             url = uri("https://maven.pkg.github.com/ALEX3KOVAL/eventingContract")
 
             credentials {
-                username = System.getenv("GITHUB_USERNAME")
-                password = System.getenv("GITHUB_TOKEN")
+                username = "ALEX3KOVAL"
+                password = "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"
             }
         }
     }
