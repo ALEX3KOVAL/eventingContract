@@ -36,7 +36,7 @@ publishing {
             from(components["java"])
 
             groupId = "alex3koval"
-            artifactId = "eventingContract"
+            artifactId = "eventing-contract"
             version = "1.13.2"
         }
     }
@@ -48,7 +48,7 @@ publishing {
 
             credentials {
                 username = "ALEX3KOVAL"
-                password = System.getenv("GITHUB_TOKEN")
+                password = "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"
             }
         }
     }
