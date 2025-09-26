@@ -5,6 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public interface BaseEventPusher {
     default String serializeToJson(ObjectMapper mapper, Object payload) throws JsonProcessingException {
-        return mapper.writeValueAsString(payload);
+        return payload instanceof String ? (String)payload : mapper.writeValueAsString(payload);
     }
 }
