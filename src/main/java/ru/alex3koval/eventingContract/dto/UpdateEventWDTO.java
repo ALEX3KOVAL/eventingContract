@@ -1,4 +1,8 @@
 package ru.alex3koval.eventingContract.dto;
 
-public record UpdateEventWDTO() {
+import java.time.LocalDateTime;
+
+public record UpdateEventWDTO(
+    LocalDateTime updatedAt
+) {
 }
