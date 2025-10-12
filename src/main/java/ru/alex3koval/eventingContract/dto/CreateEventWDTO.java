@@ -2,10 +2,13 @@ package ru.alex3koval.eventingContract.dto;
 
 import ru.alex3koval.eventingContract.vo.EventStatus;
 
+import java.time.LocalDateTime;
+
 public record CreateEventWDTO(
     String name,
     String topic,
     String json,
-    EventStatus status
+    EventStatus status,
+    LocalDateTime createdAt
 ) {
 }
