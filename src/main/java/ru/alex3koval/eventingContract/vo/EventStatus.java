@@ -10,8 +10,7 @@ import java.util.Optional;
 @Getter
 public enum EventStatus {
     CREATED((short) 0),
-    CONFIRMED((short) 1),
-    DEAD((short) 2);
+    CONFIRMED((short) 1);
 
     private final short value;
 
