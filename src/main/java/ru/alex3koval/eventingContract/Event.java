@@ -23,6 +23,18 @@ public class Event {
         this.createdAt = LocalDateTime.now();
     }
 
+    public Event(
+        String name,
+        String json,
+        EventStatus status,
+        LocalDateTime createdAt
+    ) {
+        this.name = name;
+        this.json = json;
+        this.status = status;
+        this.createdAt = createdAt;
+    }
+
     @Override
     public String toString() {
         return String.format(
