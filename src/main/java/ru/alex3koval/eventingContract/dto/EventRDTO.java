@@ -5,6 +5,7 @@ import ru.alex3koval.eventingContract.vo.EventStatus;
 import java.time.LocalDateTime;
 
 public record EventRDTO(
+    String id,
     String name,
     String topic,
     String json,
