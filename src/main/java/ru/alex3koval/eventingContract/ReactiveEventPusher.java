@@ -4,6 +4,17 @@ import reactor.core.publisher.Mono;
 import ru.alex3koval.eventingContract.vo.EventStatus;
 
 public interface ReactiveEventPusher<T> extends BaseEventPusher {
-    Mono<T> push(String topic, EventStatus status, Object payload);
-    Mono<T> push(String topic, EventStatus status, Object payload, String eventName);
+    Mono<T> push(
+        String id,
+        String topic,
+        EventStatus status,
+        Object payload
+    );
+    Mono<T> push(
+        String id,
+        String topic,
+        EventStatus status,
+        Object payload,
+        String eventName
+    );
 }
