@@ -4,6 +4,8 @@ import lombok.Getter;
 import ru.alex3koval.eventingContract.vo.EventStatus;
 
 import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.util.UUID;
 
 @Getter
 public class Event {
@@ -24,6 +26,27 @@ public class Event {
         this.json = json;
         this.status = status;
         this.createdAt = LocalDateTime.now();
+    }
+
+    public Event(
+        String name,
+        String json,
+        EventStatus status
+    ) {
+        this(name, json, status, LocalDateTime.now(ZoneOffset.UTC));
+    }
+
+    public Event(
+        String name,
+        String json,
+        EventStatus status,
+        LocalDateTime createdAt
+    ) {
+        this.id = UUID.randomUUID().toString();
+        this.name = name;
+        this.json = json;
+        this.status = status;
+        this.createdAt = createdAt;
     }
 
     public Event(
