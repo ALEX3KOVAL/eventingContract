@@ -17,4 +17,16 @@ public interface ReactiveEventPusher<T> extends BaseEventPusher {
         Object payload,
         String eventName
     );
+
+    Mono<T> push(
+        String topic,
+        EventStatus status,
+        Object payload
+    );
+    Mono<T> push(
+        String topic,
+        EventStatus status,
+        Object payload,
+        String eventName
+    );
 }

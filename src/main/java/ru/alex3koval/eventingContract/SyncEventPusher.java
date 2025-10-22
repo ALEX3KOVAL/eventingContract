@@ -8,9 +8,21 @@ public interface SyncEventPusher extends BaseEventPusher {
         String topic,
         EventStatus status,
         Object payload
-    ) throws InterruptedException;
+    );
     void push(
         String id,
+        String topic,
+        EventStatus status,
+        Object payload,
+        String eventName
+    );
+
+    void push(
+        String topic,
+        EventStatus status,
+        Object payload
+    );
+    void push(
         String topic,
         EventStatus status,
         Object payload,
